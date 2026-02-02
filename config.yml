@@ -1,0 +1,174 @@
+server_config:
+  endpoint: https://api.example.com/api/v2/fn/ps/update
+  token: your_api_key_here
+  report_time: 5
+  report_smtc: false
+  skip_smtc_cover: false
+  upload_smtc_cover: false
+  log_base64: true
+  s3_config:
+    s3_enable: false
+    upload_path: ''
+    endpoint: ''
+    region: ''
+    bucket_name: ''
+    access_key: ''
+    secret_key: ''
+    custom_url: ''
+rules:
+- match_application: Weixin
+  replace:
+    application: 微信
+    description: 即时通讯
+- match_application: QQ
+  replace:
+    application: QQ
+    description: 即时通讯
+- match_application: Telegram
+  replace:
+    application: Telegram
+    description: 即时通讯
+- match_application: Discord
+  replace:
+    application: Discord
+    description: 语音聊天
+- match_application: Slack
+  replace:
+    application: Slack
+    description: 团队协作
+- match_application: DingTalk
+  replace:
+    application: DingTalk
+    description: 办公通讯
+- match_application: Lark
+  replace:
+    application: Lark
+    description: 办公协作
+- match_application: WXWork
+  replace:
+    application: 企业微信
+    description: 企业办公
+- match_application: cloudmusic
+  replace:
+    application: NeteaseMusic
+    description: 听歌
+- match_application: QQMusic
+  replace:
+    application: QQMusic
+    description: 听歌
+- match_application: Spotify
+  replace:
+    application: Spotify
+    description: 音乐播放器
+- match_application: chrome
+  replace:
+    application: Google Chrome
+    description: 冲浪
+- match_application: msedge
+  replace:
+    application: Microsoft Edge
+    description: 看 b 站
+- match_application: firefox
+  replace:
+    application: firefox
+    description: 浏览器
+- match_application: Arc
+  replace:
+    application: Arc
+    description: 浏览器
+- match_application: Code
+  replace:
+    application: Code
+    description: Restart TS Server
+- match_application: Cursor
+  replace:
+    application: Cursor
+    description: ⌘ + K
+- match_application: idea64
+  replace:
+    application: idea64
+    description: Java IDE
+- match_application: WebStorm64
+  replace:
+    application: WebStorm
+    description: Web IDE
+- match_application: pycharm64
+  replace:
+    application: PyCharm
+    description: Python IDE
+- match_application: goland64
+  replace:
+    application: GoLand
+    description: Go IDE
+- match_application: WindowsTerminal
+  replace:
+    application: WindowsTerminal
+    description: del /f /s /q c:/ (不是
+- match_application: steamwebhelper
+  replace:
+    application: steamwebhelper
+    description: 游戏平台
+- match_application: EpicGamesLauncher
+  replace:
+    application: Epic
+    description: 看有没有什么神秘小游戏白嫖
+- match_application: YuanShen
+  replace:
+    application: Yuanshen
+    description: 启动！
+- match_application: GenshinImpact
+  replace:
+    application: Yuanshen
+    description: 启动！
+- match_application: StarRail
+  replace:
+    application: StarRail
+    description: 启动！
+- match_application: LeagueClientUx
+  replace:
+    application: LeagueClientUx
+    description: 村口排队领精粹
+- match_application: WINWORD
+  replace:
+    application: Microsoft Word
+    description: 码字
+- match_application: EXCEL
+  replace:
+    application: Microsoft Excel
+    description: 雕花
+- match_application: POWERPNT
+  replace:
+    application: Microsoft PowerPoint
+    description: 画饼
+- match_application: ONENOTE
+  replace:
+    application: Microsoft OneNote
+    description: OneNote 笔记
+- match_application: Photoshop
+  replace:
+    application: Adobe Photoshop 2023
+    description: 抠图
+- match_application: AfterFX
+  replace:
+    application: AfterFX
+    description: 视频特效
+- match_application: Premiere Pro
+  replace:
+    application: Adobe Premiere Pro
+    description: 视频剪辑
+- match_application: Figma
+  replace:
+    application: Figma
+    description: 设计工具
+- match_application: 哔哩哔哩
+  replace:
+    application: 哔哩哔哩
+    description: 上 B 站大学
+- match_application: PotPlayerMini64
+  replace:
+    application: PotPlayer
+    description: 视频播放器
+- match_application: explorer
+  replace:
+    application: explorer
+    description: 文件管理器
